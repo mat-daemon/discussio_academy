@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="theme-color" content="#000631" />
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Kanit&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <title>Discussio Academy </title>
+        <link rel="icon" href="images\simplelogo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <script>
+            $(document).ready(function(){
+	            $('#hamburger_menu').click(function(){
+                    $(this).toggleClass('open');
+                    $('#menu_2_nav').toggleClass('open');
+                });
+                $('#about_hamburger_menu').click(function(){
+                        $('#hamburger_menu').toggleClass('open');
+                        $('#menu_2_nav').toggleClass('open');
+                    })
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="102021435190975"
+  theme_color="#000631">
+      </div>
+
+        <header class="welcome_page"></header>
+
+        
+        <div id="page_header" class="page_header_2">
+            
+            <h1 id="main_title" class="main_title">Discussio Academy</h1>
+
+            <div id="logo" class="logo_2">
+                <a href="index.html"><img id = "logo_img" class = "logo_img_2" src="images/logo.png" alt="Discussio Academy logo"></a> 
+            </div>
+
+            <div id="menu" class="menu">
+
+                <ul class="menu_container">
+                    
+                    <li id ="menu_left" class = "menu_left_2">
+                        <ul class="nav_menu_left">
+                            <li class="navigation_option"><a href="index.html#akademia" class="nav_option_a">O nas</a></li>
+                            <li class="navigation_option"><a href="zasady.html" class="nav_option_a">Zasady</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li id = "menu_right" class="menu_right_2">
+                        <ul class="nav_menu_right">
+                            <li class="navigation_option"><a href="klasyspotkan.html" class="nav_option_a">Klasy spotkań</a></li>
+                            <li class="navigation_option"><a href="spotkania.html" class="nav_option_a">Spotkania</a></li>
+                        </ul>
+                    </li>
+                
+                </ul>
+                
+            </div>
+
+            <div id="menu_2" class="menu_2">
+                <div id="hamburger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <nav id="menu_2_nav">
+                <ul>
+                    <li><a id="about_hamburger_menu" href="index.html#akademia">O nas</a></li>
+                    <li><a href="zasady.html">Zasady</a></li>
+                    <li><a href="klasyspotkan.html">Klasy spotkań</a></li>
+                    <li><a href="spotkania.html">Spotkania</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+
+        <main>
+            <div id="page_title">
+                <a id="akademia"><h2>Akademia</h2></a>
+                <hr>
+            </div>
+            
+            <article class="article_content">
+                
+                <div class="not_oriented" data-aos="fade-up" data-aos-duration="500">
+                    <p>
+                        Akademia powstała w celu zdobywania wiedzy, wymiany poglądów oraz dyskusji. 
+                    </p>
+                </div>
+                
+                <hr class="hr_p">
+                
+                <div class="right_oriented" data-aos="fade-up" data-aos-duration="500">
+                    <p>
+                        Nierzadko można się przekonać, że nauczanie powszechne
+                        bywa niewystarczające do funkcjonowania we współczesnym świecie, a informacje przekazywane w szkole są pozbawione praktycznego kontekstu.
+                        Nie są tutaj dewaluowane instytucje oświatowe, został im odgórnie narzucony program nauczania, który muszą zrealizować. Przedmioty takie jak
+                        matematyka, historia, język polski czy nauki przyrodnicze są niezbędnymi elementami w wykształceniu człowieka, a międzynarodowe badania, w tym PISA, wskazują
+                        na wysoki poziom umiejętności polskich uczniów.
+                    </p>
+                    <img class="article_image" src="images/Laptop.svg">
+                </div>
+                
+                <hr class="hr_p">
+                <div class="not_oriented" data-aos="fade-up" data-aos-duration="500">
+                    <p>
+                        Jako obecni uczniowie i absolwenci przyznajemy rację, że merytorycznie treści w szkołach jest dużo. Na lekcjach czuje się ciągłą presję w realizacji
+                        materiału. Bezustannie tworzone są notatki, rozwiązywane zadania, przedstawiane kolejne fakty. Jednak nie stawia się pytań: dlaczego tak jest,
+                        nie pyta się o opinię, nie wywiązują się dyskusje, a przede wszytkim odczuwalny jest brak aktualnych informacji politycznych, społecznych i ekonomicznych 
+                        o nowoczesnym świecie. 
+                    </p>
+                </div>
+               
+                <hr class="hr_p">
+                
+                <div class="left_oriented" data-aos="fade-up" data-aos-duration="500">
+
+                    <img class="article_image" src="images/talking.svg">
+                    <p>
+                        Chcemy, aby akademia była miejscem, w którym ludzie nie boją się odezwać. Tutaj nie ma ocen, a nikt nie powie, że nie ma czasu na zbędne pytania. Jeśli przychodzisz
+                        na spotkanie, to znaczy, że chcesz się czegoś dowiedzieć, zrozumieć, a nawet podzielić własną wiedzą i doświadczeniem. Nie ma zadań domowych, jednak do każdego 
+                        spotkania dołączane są materiały oraz źródła, z których można się przygotować. Nie są obligatoryjne, nikt nie będzie Was odpytywał. Służą wstępnemu
+                        zapoznaniu z tematem i przygotowaniu do czynnego uczestnictwa w spotkaniu.
+                    </p>
+                </div>
+                
+                <hr class="hr_p">
+                <div class="not_oriented" data-aos="fade-up" data-aos-duration="500">
+                    <p>
+                        Staramy się, aby nad każdym spotkaniem czuwał host, który jest osobą odpowiedzialną za jego przebieg.
+                        W przypadku dyskusji i debaty jest wyznaczany przez nas, natomiast do prowadzenia
+                        kanałów informacyjnych wybieramy i zapraszamy osoby z doświadczeniem w danej dziedzinie, które znają zagadnienie nie tylko ze strony teoretycznej.
+                    </p>
+                </div>
+                
+                <hr class="hr_p">
+                <div class="right_oriented" data-aos="fade-up" data-aos-duration="500">
+                    <p>
+                        Akademię tworzy przede wszystkim młodzież, choć uczestniczyć w spotkaniach może każdy. Spotkania przybierają określone formy, które zostały opisane w zakładce 
+                        <a href="klasyspotkan.html">Klasy spotkań</a>. Zachęcamy również do zapoznania się z <a href="zasady.html">Zasadami</a>.
+                    </p>
+                    <img class="article_image" src="images/people.svg">
+                </div>
+
+                <hr class="hr_p">
+                <p>
+                    
+                </p>
+            </article>
+
+            <div id="credits" class="credits" style="display: flex;">
+                <div id="credits_content" style="margin: auto;">
+                   <p style="text-align: center;">Na razie nie ujawniamy naszych twórców.</p>
+                </div>
+            </div>
+                
+        </main>
+
+        
+        <footer>
+            <div class="footer_nav">
+                    <ul class="footer_nav_ul">
+                        <li><div id="cast">Twórcy</div></li>
+                        <li class="separator"><p class="circle">&#9679</p></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li class="separator"><p class="circle">&#9679</p></li>
+                        <li><a href="contact.html#location">Adresy</a></li>
+                    </ul>
+            </div>
+
+            <div class="social">
+               
+                <div class="social_container">
+                    <a href="#" class="social_fb"><img class="social_img" src="images/facebook.png"></a>
+                    <a href="#" class="social_insta"><img class="social_img" src="images/instagram.png"></a>
+                    <a href="#" class="social_snap"><img class="social_img" src="images/snapchat.png"></a>
+                </div>
+                
+                
+            </div>
+
+            <div class="footer_information">
+
+                <div class="partners">
+                    <img class="opolelogo" src="images/opolelogo.png">
+                </div>
+                
+            </div>
+            
+            <div class="copyright">
+                <p>Discussio Academy ©Copyright 2021 by Śmigielski</p>
+            </div>
+            
+        </footer>
+        <!--<script src="scripts/main.js"></script>--->
+        
+        
+        <script>
+            
+            window.onscroll = function() {myFunction()};
+            
+            function myFunction() {
+              if (document.body.scrollTop > document.documentElement.clientHeight * 0.3 || document.documentElement.scrollTop > document.documentElement.clientHeight * 0.3) {
+                document.getElementById("page_header").className = "page_header";
+                document.getElementById("logo_img").className = "logo_img";
+                document.getElementById("logo").className = "logo";
+                document.getElementById("menu_2").setAttribute("style", "display: flex");
+                
+                let element = document.getElementById("main_title");
+                if (element != null) element.parentNode.removeChild(element);
+
+                document.getElementById("menu_left").className = "menu_left";
+                document.getElementById("menu_right").className = "menu_right";
+              } 
+            }
+        </script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+            easing: 'ease-in-quad',
+          });
+        </script>
+        <!--<script>
+            
+            var my_time;
+		    var count;
+		    function pageScroll() {
+            // If condition to set repeat 
+			    if (count < 2) {
+				    var objDiv = document.getElementById("credits");
+				    objDiv.scrollTop = objDiv.scrollTop + 1;
+				    if (objDiv.scrollTop === (objDiv.scrollHeight - objDiv.offsetHeight)) {
+                        setTimeout(function() {
+                            objDiv.className = "credits";
+                            objDiv.scrollTop = 0;
+                            const scrollY = document.body.style.top;
+                            document.body.style.position = '';
+                            document.body.style.top = '';
+                            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+						    count++;
+                        }, 1200);
+				    }
+                    //set scrolling time start
+				    my_time = setTimeout('pageScroll()', 50);
+                    //set scrolling time end
+			    }
+		}
+
+            document.getElementById("cast").onclick=function(){
+                document.body.style.top = `-${window.scrollY}px`;
+                document.body.style.position = 'fixed';
+                
+                
+                var tmp = document.getElementById("credits");
+                tmp.className = "credits_2";
+                count = 0;
+                setTimeout('pageScroll()', 1200);
+                
+            } 
+        </script>--->
+        <script>
+            document.getElementById("cast").onclick=function(){
+                document.body.style.top = `-${window.scrollY}px`;
+                document.body.style.position = 'fixed';
+                
+                
+                var tmp = document.getElementById("credits");
+                tmp.className = "credits_2";
+            }
+            
+            document.getElementById("credits").onclick=function(){
+                var objDiv = document.getElementById("credits");
+                objDiv.className = "credits";
+                objDiv.scrollTop = 0;
+                const scrollY = document.body.style.top;
+                document.body.style.position = '';
+                document.body.style.top = '';
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
+        </script>
+    </body>
+</html>

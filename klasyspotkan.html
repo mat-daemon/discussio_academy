@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="theme-color" content="#000631" />
+        <link href="styles/styleklasyspotkan.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Kanit&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <title>Discussio Academy </title>
+        <link rel="icon" href="images\simplelogo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script> 
+            $(document).ready(function(){
+                $("#meeting_type_1").click(function(){$("#meeting_description_1").slideToggle("slow");
+                                                        $("#arrow_1").toggleClass("arrow_2");
+                                            });
+                $("#meeting_type_2").click(function(){ $("#meeting_description_2").slideToggle("slow");
+                                                        $("#arrow_2").toggleClass("arrow_2");
+                                            });
+                $("#meeting_type_3").click(function(){$("#meeting_description_3").slideToggle("slow");
+                                                        $("#arrow_3").toggleClass("arrow_2");
+                                            });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+	            $('#hamburger_menu').click(function(){
+                    $(this).toggleClass('open');
+                    $('#menu_2_nav').toggleClass('open');
+	            });
+            });
+        </script>
+    </head>
+
+   
+    <body>
+        
+        
+        <div id="page_header" class="page_header">
+            
+            
+            <div class="logo">
+                <a href="index.html"><img id = "logo_img" class = "logo_img" src="images/logo.png" alt="Discussio Academy logo"></a> 
+            </div>
+
+            <div id="menu" class="menu">
+
+                <ul class="menu_container">
+                    
+                    <li id ="menu_left" class = "menu_left">
+                        <ul class="nav_menu_left">
+                            <li class="navigation_option"><a href="index.html#akademia" class="nav_option_a">O nas</a></li>
+                            <li class="navigation_option"><a href="zasady.html" class="nav_option_a">Zasady</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li id = "menu_right" class="menu_right">
+                        <ul class="nav_menu_right">
+                            <li class="navigation_option"><a href="klasyspotkan.html" class="nav_option_a">Klasy spotkań</a></li>
+                            <li class="navigation_option"><a href="spotkania.html" class="nav_option_a">Spotkania</a></li>
+                        </ul>
+                    </li>
+                
+                </ul>
+                
+            </div>
+
+            <div id="menu_2">
+                <div id="hamburger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <nav id="menu_2_nav">
+                <ul>
+                    <li><a href="index.html#akademia">O nas</a></li>
+                    <li><a href="zasady.html">Zasady</a></li>
+                    <li><a href="klasyspotkan.html">Klasy spotkań</a></li>
+                    <li><a href="spotkania.html">Spotkania</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+        
+        <main>
+            
+            <div id="page_title">
+                
+            </div>
+            <h2 id="title">Klasy spotkań</h2>
+            <hr>
+            <div id="page_content">
+                <h3>Spotkania odbywają w trzech formach</h3>
+            <ul class="meeting_ul">
+                <li class="meeting_li">
+                    
+                    <img id="meeting_img_1" src="images/conversation.svg">
+                    <div id="meeting_type_1" class="meeting_type"><p class="meeting_type_p">Dyskusja</p>
+                        <div class="arrow bounce" id="arrow_1"></div>
+                    </div>
+
+                    <div id="meeting_description_1" class="meeting_description">
+                        
+                        <p>Po przybyciu na miejsce Dyskusji otrzymujecie kartę ze swoim numerem, a następnie zajmujecie miejsce i czekacie, aż host ropocznie Dyskusję.</p>
+                        <p>Od tego czasu Dyskusja przebiega według <a href="zasady.html#Agenda_anchor">Agendy</a>.
+                        Odczytywane jest zagadnienie (w formie pytania lub stwierdzenia), a następnie host oddaje głos uczestnikom.</p>
+
+                        <p>Możecie wypowiedzieć się na temat bieżącego zagadnienia poprzez uniesienie swojej karty z numerem i wskazaniu przez hosta.</p>
+
+                        <p><strong style="background-color: red; border-radius: 5px; color:white; padding: 2px;">UWAGA!</strong> Przestrzegamy zasad poszanowania drugiego człowieka i respektujemy każdą wypowiedź. Jednak host może określić Agresywność Dyskusji:</p>
+                        <ul class="inner_list">
+                            <li>niska - Dyskusja jest prowadzona spokojnie, nie przerywa się wypowiedzi</li>
+                            <li>optymalna - Dyskusja jest prowadzona naturalnie, dopuszcza się nieliczne przypadki przerwania wypowiedzi</li>
+                            <li>wysoka - Dyskusja jest prowadzona dynamicznie, dopuszcza się przerywanie wypowiedzi i ataki werbalne w granicach kultury. O tym, czy granica została
+                                przekroczona, decyduje host.
+                            </li>
+                        </ul>
+                        <p>Zagadnienie jest omawiane, dopóki zgłaszają się chętni do zabrania głosu. W przypadku kiedy żadna karta z numerem nie jest uniesiona,
+                            host pyta, czy któraś z osób pragnie się jeszcze wypowiedzieć. Jeśli nikt nie podniesie swojej karty z numerem, to host przechodzi do
+                            następnego zagadnienia.
+                        </p>
+                        <p>Dyskusja zostaje zakończona po omówieniu ostatniego zagadnienia z <a href="zasady.html#Agenda_anchor">Agendy</a> lub po osiągnięciu limitu czasowego: 1 godziny zegarowej.
+                        Intensywność, atrakcyjność i długość Dyskusji zależą więc od zaangażowania uczestników.
+                        Na koniec host podsumowuje Dyskusję.</p>
+                        
+                    </div>
+                </li>
+                
+                <li class="meeting_li">
+                    <img id="meeting_img_2" src="images/rostrum.svg">
+                    <div id="meeting_type_2" class="meeting_type"><p class="meeting_type_p">Debata</p>
+                        <div class="arrow bounce" id="arrow_2"></div>
+                    </div>
+                    <div id="meeting_description_2" class="meeting_description">
+                        
+                        <p>Uczestnicy debaty przy wejściu do sali zostają podzieleni na trzy drużyny:</p>
+                        <ul class="inner_list">
+                            <li>Atak - strona opowiadająca się przeciw postawionej tezie lub zadanemu pytaniu, jej celem jest zwycięstwo nad Obroną</li>
+                            <li>Obrona - strona opowiadająca się za postawioną tezą lub zadanym pytaniem, jej celem jest zwycięstwo nad Atakiem</li>
+                            <li>Jury - strona neutralna</li>
+                        </ul>
+                        <p style="border: 1px;"><strong style="background-color: red; border-radius: 5px; color:white; padding: 2px;">UWAGA!</strong> Można wnioskować o swap do innej drużyny. Należy zgłosić to hostowi przed rozpoczęciem debaty. Natępnie sprawdza on, czy w drużynie docelowej 
+                            znajduje się osoba chętna na swapa. Jeśli tak, uczestnicy mogą się zamienić. W przeciwnym wypadku nie dochodzi do swapa.
+                        </p>
+                        <p>Po zajęciu miejsc i dokonaniu ewentualnych swapów, drużyny mają 5 minut na zapoznanie się, przygotowanie argumentów i przygotowanie strategii.</p>
+                        <p>Host ropoczyna debatę.</p>
+
+                        <div style="margin-top: 2em;">
+                            <p>Otwiera się <strong>I część Debaty</strong> złożona z 2 rund - pytania lub tezy do tej rundy są podane w <a href="">Agendzie</a></p>
+                            <div style="margin-left: 1em;">
+                                <p>W tej części na rundę składa się:</p> 
+                                <ol>
+                                    <li>Wypowiedź Ataku - drużyna ma 2 minuty na swoją wypowiedź, której nie można przerywać</li>
+                                    <li>Wypowiedź Obrony - drużyna ma 2 minuty na swoją wypowiedź, której nie można przerywać</li>
+                                    <li>Ocena Jury - drużyna może zadać maksymalnie 2 pytania każdej z pozostałych drużyn, następnie przez 1 minutę się naradza i przyznaje 1 punkt
+                                        wybranej drużynie.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <p style="margin-top: 2em;">Po 2. rundzie następuje 5 - minutowa przerwa.</p>
+
+                        <div style="margin-top: 2em;">
+                            <p>
+                                Otwiera się <strong>II część Debaty</strong> złożona z 2 rund - pytania lub tezy do tej rundy nie będą podane w <a href="">Agendzie</a>, jednak można się do nich
+                                przygotować z udostępnionych <a href="#">Materiałów pomocniczych</a>.
+                            </p>
+                            <div style="padding-left: 1em;">
+                                <p>W tej części na rundę składa się: <p>
+                                    <ol>
+                                        <li>Wypowiedź Ataku - drużyna ma 2 minuty na swoją wypowiedź, której nie można przerywać</li>
+                                        <li>Wypowiedź Obrony - drużyna ma 2 minuty na swoją wypowiedź, której nie można przerywać</li>
+                                        <li>Okno Otwarte - 2 minuty otwartej wymiany zdań między drużyną Ataku i Obrony</li>
+                                        <li>Ocena Jury - drużyna może zadać maksymalnie 2 pytania każdej z pozostałych drużyn, następnie przez 1 minutę się naradza i przyznaje 2 punkty
+                                            wybranej drużynie.
+                                        </li>
+                                    </ol>
+                            </div>
+                        </div>
+                        
+                        <p style="margin-top: 2em;">Wygrywa drużyna, która jako pierwsza zdobędzie 4 punkty lub więcej. Jeśli taka sytuacja zdarzy się przed zakończeniem wszystkich rund, Debata może 
+                            być kontynuowana, lecz nie musi. Zależy to od zgody wszystkich drużyn na Kontynuację Debaty.
+                        </p>
+                        <p>W przypadku remisu host zarządza Dogrywkę.</p>
+                        <p>Dogrywka składa się z jednej rundy analogicznej do tej rozgrywanej w II części debaty. Drużyna wygrywająca Dogrywkę wygrywa całą Debatę.</p>
+                        <p>Na koniec host podsumowuje Debatę.</p>
+                    </div>
+                </li>
+                
+                <li class="meeting_li">
+                    <img id="meeting_img_3" src="images/presentation.svg">
+                    <div id="meeting_type_3" class="meeting_type"><p class="meeting_type_p">Kanał informacyjny</p>
+                        <div class="arrow bounce" id="arrow_3"></div>
+                    </div>
+                    <div id="meeting_description_3" class="meeting_description">
+                        
+                        <p>Do prowadzenia Kanału Informacyjnego zapraszamy osoby zaznajomione z tematem bieżącego spotkania. Chcemy, aby opowiadały one ze swojej perspektywy,
+                            doświadczenia, w kontekście tego, co widziały lub w czym uczestniczyły. Zależy nam, aby nie była to wiedza jedynie teoretyczna lub podręcznikowa.
+                            Mogą to być studenci, uczniowie, wykonawcy wszelkich zawodów, przedsiębiorcy, podróżnicy, pasjonaci danego tematu.
+                            Zachęcamy osoby zainteresowane poprowadzeniem kanału do <a href="contact.html">Kontaktu</a> z nami.
+                        </p>
+                        <p>Do kanału informacyjnego dołączana jest <a href="">Agenda</a>, która określa przebieg spotkania i poruszane zagadnienia oraz 
+                            <a href="">Materiały pomocnicze</a>, z którymi warto się zapoznać przed spotkaniem.</p>
+                        <p>Spotkanie trwa 1 godzinę zegarową.</p>
+                        <p>Podczas spotkania można zadawać pytania i gorąco do tego zachęcamy. Kanał informacyjny jest po to, aby dzielić się doświadczeniem, 
+                            poszerzać wiedzę i poznawać odpowiedzi na dręczące pytania.  
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+            </div>
+
+            <div id="credits" class="credits">
+                <div id="credits_content">
+                    <h2 id="credits_header"></h2>
+                    <div class="author">
+                        <div class="profile_pic">
+                            <img class="profile_pic_img" src="images/profile.png">
+                        </div>
+                        <div class="authors_name">
+                            <p>Name Surname</p>
+                        </div>
+                        <div class="about_author">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Nulla scelerisque enim viverra, lacinia tellus in, commodo risus. 
+                                    Maecenas efficitur sapien nunc, quis ultrices ligula ultrices at. 
+                                    Aenean ut posuere elit. In in ornare nisi. Proin ex leo, sagittis rutrum quam tristique, convallis placerat massa. 
+                                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                    Etiam vel cursus est, nec mattis turpis. Nulla dolor diam, imperdiet et accumsan at, condimentum in neque. 
+                                    In est justo, iaculis eget tempor id, volutpat ac augue. Donec fermentum lacus at varius eleifend.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="author">
+                        <div class="profile_pic">
+                            <img class="profile_pic_img" src="images/profile.png">
+                        </div>
+                        <div class="authors_name">
+                            <p>Name Surname</p>
+                        </div>
+                        <div class="about_author">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Nulla scelerisque enim viverra, lacinia tellus in, commodo risus. 
+                                    Maecenas efficitur sapien nunc, quis ultrices ligula ultrices at. 
+                                    Aenean ut posuere elit. In in ornare nisi. Proin ex leo, sagittis rutrum quam tristique, convallis placerat massa. 
+                                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                    Etiam vel cursus est, nec mattis turpis. Nulla dolor diam, imperdiet et accumsan at, condimentum in neque. 
+                                    In est justo, iaculis eget tempor id, volutpat ac augue. Donec fermentum lacus at varius eleifend.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="author">
+                        <div class="profile_pic">
+                            <img class="profile_pic_img" src="images/profile.png">
+                        </div>
+                        <div class="authors_name">
+                            <p>Name Surname</p>
+                        </div>
+                        <div class="about_author">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Nulla scelerisque enim viverra, lacinia tellus in, commodo risus. 
+                                    Maecenas efficitur sapien nunc, quis ultrices ligula ultrices at. 
+                                    Aenean ut posuere elit. In in ornare nisi. Proin ex leo, sagittis rutrum quam tristique, convallis placerat massa. 
+                                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                    Etiam vel cursus est, nec mattis turpis. Nulla dolor diam, imperdiet et accumsan at, condimentum in neque. 
+                                    In est justo, iaculis eget tempor id, volutpat ac augue. Donec fermentum lacus at varius eleifend.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        
+        <footer>
+            <div class="footer_nav">
+                    <ul class="footer_nav_ul">
+                        <li><div id="cast">Twórcy</div></li>
+                        <li class="separator"><p class="circle">&#9679</p></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li class="separator"><p class="circle">&#9679</p></li>
+                        <li><a href="contact.html#location">Adresy</a></li>
+                    </ul>
+            </div>
+
+            <div class="social">
+               
+                <div class="social_container">
+                    <a href="#" class="social_fb"><img class="social_img" src="images/facebook.png"></a>
+                    <a href="#" class="social_insta"><img class="social_img" src="images/instagram.png"></a>
+                    <a href="#" class="social_snap"><img class="social_img" src="images/snapchat.png"></a>
+                </div>
+                
+                
+            </div>
+
+            <div class="footer_information">
+
+                <div class="partners">
+                    <img class="opolelogo" src="images/opolelogo.png">
+                </div>
+                
+            </div>
+            
+            <div class="copyright">
+                <p>Discussio Academy ©Copyright 2021 by Śmigielski</p>
+            </div>
+        
+        </footer>
+        <!--<script src="scripts/main.js"></script>--->
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            function myFunction() {
+                if(window.innerWidth >= 800){
+                    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+                var logo = document.getElementsByClassName("logo");
+                var logo_img = document.getElementsByClassName("logo_img");
+                if (logo.length != 0 && logo_img.length != 0){
+                    logo[0].className = "logo_2";
+                    logo_img[0].className = "logo_img_2";
+                }
+              }
+              else{
+                    var logo_2 = document.getElementsByClassName("logo_2");
+                    var logo_img_2 = document.getElementsByClassName("logo_img_2");
+                    if (logo_2.length != 0 && logo_img_2.length != 0){
+                    logo_2[0].className = "logo";
+                    logo_img_2[0].className = "logo_img";
+                
+                  }
+                } 
+                }
+              
+            }
+        </script>
+        <script>
+            
+            var my_time;
+            var count;
+            var scroll_page
+		    function pageScroll() {
+            // If condition to set repeat 
+			    if (count < 2) {
+				    var objDiv = document.getElementById("credits");
+				    objDiv.scrollTop = objDiv.scrollTop + 1;
+				    if (objDiv.scrollTop === (objDiv.scrollHeight - objDiv.offsetHeight)) {
+                        setTimeout(function() {
+                            objDiv.className = "credits";
+                            objDiv.scrollTop = 0;
+                            document.body.style.position = '';
+                            document.body.style.top = '';
+                            window.scrollTo(0, parseInt(scroll_page || '0') * -1);
+						    count++;
+                        }, 1200);
+				    }
+                    //set scrolling time start
+				    my_time = setTimeout('pageScroll()', 50);
+                    //set scrolling time end
+			    }
+		    }
+
+            document.getElementById("cast").onclick=function(){
+                document.body.style.top = `-${window.scrollY}px`;
+                document.body.style.position = 'fixed';
+                
+                
+                var tmp = document.getElementById("credits");
+                tmp.className = "credits_2";
+                count = 0;
+                scroll_page = document.body.style.top;
+                setTimeout('pageScroll()', 1200);
+                
+            } 
+        </script>
+    </body>
+</html>
